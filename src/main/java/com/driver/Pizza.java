@@ -2,7 +2,7 @@ package com.driver;
 
 public class Pizza {
 
-    private int billPrice;
+    private int  Price;
 
 
 
@@ -19,31 +19,28 @@ public class Pizza {
         this.isVeg = isVeg;
         // your code goes here
         if(isVeg){
-            this.billPrice=300;
+            this.Price=300;
             this.toppingsPrice=120;
         }
         else {
-            this.billPrice=400;
+            this.Price=400;
             this.toppingsPrice=120;
         }
         this.cheesePrice=80;
         this.paperbagprice=20;
-        this.bill= "Base Price Of The Pizza: "+this.billPrice+"\n";
+        this.bill= "Base Price Of The Pizza: "+this.Price+ "\n";
 
     }
 
-   // public int getPrice(){
-   //     return this.billPrice;
-    //}
-
-    public int getBillPrice() {
-        return this.billPrice;
+    public int getPrice(){
+        return this.Price;
     }
+
+
 
     public void addExtraCheese(){
         // your code goes here
-        if(isCheeseAded==false){
-            billPrice+=cheesePrice;
+        if(isCheeseAded==false){Price+=cheesePrice;
             isCheeseAded=true;
         }
     }
@@ -51,7 +48,7 @@ public class Pizza {
     public void addExtraToppings(){
         // your code goes here
         if (isToppingAded==false){
-            billPrice+=toppingsPrice;
+            Price+=toppingsPrice;
             isToppingAded=true;
 
         }
@@ -60,7 +57,7 @@ public class Pizza {
     public void addTakeaway(){
         // your code goes here
         if(isPaperBagAded==false){
-            billPrice+=paperbagprice;
+            Price+=paperbagprice;
             isPaperBagAded=true;
         }
     }
@@ -73,7 +70,7 @@ if (isBillGenerated==false){
     }
     if (isToppingAded)bill+="Extra Toppings Added: "+this.toppingsPrice+"\n";
     if (isPaperBagAded)bill+="Paperbag Added: "+this.paperbagprice+"\n";
-    bill+="Total Price: "+billPrice+"\n";
+    bill+="Total Price: "+Price+"\n";
     isBillGenerated=true;
 
 }
