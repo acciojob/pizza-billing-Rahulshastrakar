@@ -20,7 +20,7 @@ public class Pizza {
         // your code goes here
         if(isVeg){
             this.Price=300;
-            this.toppingsPrice=120;
+            this.toppingsPrice=70;
         }
         else {
             this.Price=400;
